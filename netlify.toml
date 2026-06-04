@@ -1,0 +1,12 @@
+# Netlify 배포 설정
+# 텔레그램 웹훅이 호출하는 함수는 아래 경로로 노출됩니다:
+#   https://<사이트이름>.netlify.app/.netlify/functions/telegram
+
+[build]
+  # 정적 사이트 빌드는 없고, 함수만 사용합니다.
+  functions = "netlify/functions"
+  publish   = "public"
+
+[functions]
+  # Netlify Functions 런타임 (Node 18+ 에서 fetch 내장 사용)
+  node_bundler = "esbuild"

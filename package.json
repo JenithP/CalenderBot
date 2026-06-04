@@ -1,0 +1,9 @@
+{
+  "name": "telegram-calendar-bot",
+  "version": "1.0.0",
+  "description": "개인용 구글 캘린더 알림 텔레그램 봇 (Netlify Functions)",
+  "private": true,
+  "dependencies": {
+    "google-auth-library": "^9.14.1"
+  }
+}
